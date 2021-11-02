@@ -22,7 +22,7 @@ body {
 
 .heymonkey {
   position: absolute;
-  width: 20%;
+  width: 25%;
   height: 50%;
   bottom: 0;
   animation-name: Heymonkey;
@@ -40,7 +40,7 @@ body {
   left: 10%;
   width: 30%;
   height: 25%;
-  border-radius: 50% 50% 50% 0;
+  border-radius: 50%;
   border: 3px white solid;
   display: flex;
   align-items: center;
@@ -51,16 +51,24 @@ body {
   font-size: 25px;
   letter-spacing: 1px;
   transition: ease-in;
+  opacity: 0;
+  transition-duration: 1s;
   animation-name: Textbubble;
 }
 
-@keyframes Textbubble {
-  from {
-    opacity: 0;
-  }
-  to {
-    width: 40%;
-    height: 80%;
-    opacity: 1;
-  }
+.heymonkey:hover ~ .txtbubble {
+  opacity: 1;
+}
+
+.flyingparrot {
+  position: absolute;
+  top: 20%;
+  width: 150px;
+  height: 100px;
+  animation-name: Flying-parrot;
+  left: -15%;
+}
+
+@keyframes Flying-parrot {
+
 }
