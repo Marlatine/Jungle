@@ -66,9 +66,17 @@ body {
   width: 150px;
   height: 100px;
   animation-name: Flying-parrot;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
   left: -15%;
+  z-index: 1;
 }
 
 @keyframes Flying-parrot {
-
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
 }
