@@ -74,9 +74,19 @@ body {
 
 @keyframes Flying-parrot {
   from {
-    left: 0%;
+    left: -15%;
   }
   to {
     left: 100%;
   }
+}
+
+.relaxingtiger {
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); /*Roterer bildet slik at det blir speilvendt*/
+  left: 55%;
+  top: 60%;
 }
